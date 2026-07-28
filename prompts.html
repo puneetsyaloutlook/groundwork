@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompt library: AIGroundwork</title>
+<meta name="description" content="Every AIGroundwork prompt in one place: run one method, run a whole step, or install the full standing instruction.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="frame">
+  <header class="masthead">
+    <div class="inner">
+      <a class="brand" href="index.html">AIGroundwork <span class="datum">AU</span></a>
+      <nav class="nav">
+        <a href="how-it-works.html">How it works</a>
+        <a href="steps.html">The four steps</a>
+        <a href="prompts.html" class="active">Prompt library</a>
+      </nav>
+    </div>
+  </header>
+  <section class="sec" style="padding-bottom:var(--sp-xl)">
+    <span class="tick" style="top:72px">00</span>
+    <div class="inner">
+      <div class="callout">Prompt library <span class="ref">/ copy and run</span></div>
+      <h1 class="display">Every prompt, in one place.</h1>
+      <p class="lead">Three levels. Run a single method when that is all you need. Run a whole step to do a part of the journey properly. Install the full instruction once, in a project or an agent, so the method runs on every task. Everything works from what is already in your chat and asks only for what is missing.</p>
+      <div class="note"><div class="nk">Adjusting a prompt</div><p>All of these work as they are. If you want to tailor one to your field, for instance by swapping the general list of what counts as a lead for your own, that is optional. After changing one, run it once on a task where you already know what a good result looks like, and change one thing at a time.</p></div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="inner">
+      <div class="lib-group" style="margin-top:0">Run one method</div>
+<div class="method" id="restate-the-question">
+  <div class="method-head">
+    <div class="mk">Single method</div>
+    <h3>Restate the question</h3>
+  </div>
+  <div class="method-facets">
+<div class="facet"><div class="fk">Does</div><div class="fv">Turns a loose topic into a question you can actually research.</div></div>
+<div class="facet"><div class="fk">Replicates (human practice)</div><div class="fv">A researcher rarely takes a topic at face value. They work out what decision it serves and what a useful answer would look like, and often find the real question sits just to one side of the one they were handed.</div></div>
+<div class="facet"><div class="fk">When to use</div><div class="fv">At the start of a piece of work, or partway through when you realise the question was never properly pinned down.</div></div>
+  </div>
+  <div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">Help me turn what I am researching into a properly researchable question.
+
+If we have already been discussing a topic in this chat, work from that. If not,
+ask me for the topic.
+
+Restate it as three things:
+1. The decision this research is meant to inform.
+2. The questions that would have to be answered to make that decision.
+3. The kind of evidence that would answer each of those questions.
+
+If it cannot be restated this way, tell me why and suggest a version that can.
+Also tell me if there is a nearby question that looks more worth researching
+than the one on the table, and why.
+
+Wait for me to confirm the question before searching.</pre>
+  </div>
+</div>
+<div class="method" id="spot-the-lead">
+  <div class="method-head">
+    <div class="mk">Single method</div>
+    <h3>Spot the lead</h3>
+  </div>
+  <div class="method-facets">
+<div class="facet"><div class="fk">Does</div><div class="fv">Points out the details worth following up, including the ones that are easy to miss.</div></div>
+<div class="facet"><div class="fk">Replicates (human practice)</div><div class="fv">An experienced researcher notices things a casual reader skims past: a name, a referenced-but-unlinked document, a number that does not match another, or something that should be present and simply is not.</div></div>
+<div class="facet"><div class="fk">When to use</div><div class="fv">On material already in the chat, or new material you are about to bring in.</div></div>
+  </div>
+  <div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">Look at the material for leads, the way a researcher would rather than a
+summariser.
+
+Use whatever material is already in this chat. If there is none, or you want me
+to point at something specific, ask.
+
+Point out every detail worth following up, including:
+- a named person, especially one moving between roles or organisations
+- a document, filing or study referred to but not linked or quoted
+- a number that conflicts with another one here or with something well known
+- anything that should be present given the subject and is missing
+
+For each lead, say what it is and what following it up might tell me. Do not
+summarise. I only want the leads.</pre>
+  </div>
+</div>
+<div class="method" id="chase-the-detail">
+  <div class="method-head">
+    <div class="mk">Single method</div>
+    <h3>Chase the detail</h3>
+  </div>
+  <div class="method-facets">
+<div class="facet"><div class="fk">Does</div><div class="fv">Takes a specific claim from a weak source and tries to confirm it against a source that can actually stand behind it.</div></div>
+<div class="facet"><div class="fk">Replicates (human practice)</div><div class="fv">Treating a poor source as a lead rather than evidence. You do not cite the blog; you take the checkable fact out of it and find where it can be verified.</div></div>
+<div class="facet"><div class="fk">When to use</div><div class="fv">Whenever something matters and its only source so far is weak.</div></div>
+  </div>
+  <div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">There is a detail here that needs verifying against a better source.
+
+If it is clear from our chat which detail I mean, work with that. If not, ask me
+which one, and where I saw it.
+
+Treat the current source as a lead, not as evidence. Find a source that can
+actually support the detail: a primary document, an official body, a
+peer-reviewed source, or named specialist reporting. Search for the detail
+itself, not the general topic.
+
+Tell me one of three things:
+- Confirmed, with the source and what kind of source it is.
+- Contradicted, with the source.
+- Could not confirm it after a genuine attempt.
+
+Do not settle for another version of the same weak source repeating the claim.</pre>
+  </div>
+</div>
+<div class="method" id="resolve-and-record-claims">
+  <div class="method-head">
+    <div class="mk">Single method</div>
+    <h3>Resolve and record claims</h3>
+  </div>
+  <div class="method-facets">
+<div class="facet"><div class="fk">Does</div><div class="fv">Keeps a running record of every claim that matters, its status, and its source, so nothing is silently asserted or silently dropped.</div></div>
+<div class="facet"><div class="fk">Replicates (human practice)</div><div class="fv">Tracking what you have actually established versus what you are still carrying on trust. It is the difference between a finding you can defend and one you hope holds up.</div></div>
+<div class="facet"><div class="fk">When to use</div><div class="fv">At any point in a research task. If you start it partway through, it will build the record from what has been discussed so far.</div></div>
+  </div>
+  <div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">Keep a running record of every claim that matters to the conclusion.
+
+Start from the claims already raised in this chat, then keep it updated as we go.
+Present it as a table with these columns:
+- Claim
+- Does the conclusion depend on it? (yes / no)
+- Status (confirmed / contradicted / unconfirmed)
+- Best source so far, and what kind of source it is
+- What was searched
+
+When we reach conclusions, state as fact only the claims marked confirmed.
+Anything unconfirmed must be flagged as such in the write-up, not stated plainly
+and not left out.</pre>
+  </div>
+</div>
+<div class="method" id="put-two-patterns-side-by-side">
+  <div class="method-head">
+    <div class="mk">Single method</div>
+    <h3>Put two patterns side by side</h3>
+  </div>
+  <div class="method-facets">
+<div class="facet"><div class="fk">Does</div><div class="fv">Lays two things against each other and reads the shape of the result, rather than just filling in cells.</div></div>
+<div class="facet"><div class="fk">Replicates (human practice)</div><div class="fv">A core analytical move. You learn something from a policy by setting it against a lifecycle, or from one product by setting it against another, that you cannot see by reading either alone. The insight is in the pattern that emerges.</div></div>
+<div class="facet"><div class="fk">When to use</div><div class="fv">When you have two structured things and suspect the relationship between them will tell you something.</div></div>
+  </div>
+  <div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">Put two things side by side and tell me what the comparison reveals.
+
+If it is clear from our chat what the two things are, use them. If only one is
+clear, suggest a good thing to set it against. If neither is, ask me.
+
+Lay them out in a table. Then, and this is the important part, read the shape of
+the result rather than describing each cell. Tell me:
+- where the elements spread out evenly, and where they bunch together
+- where one side is crowded and the other is empty
+- what those patterns imply
+
+If most of one will not line up against the other, do not force it. Tell me they
+do not fit well together, and suggest a better pairing.</pre>
+  </div>
+</div>
+<div class="method" id="look-for-evidence-against-the-conclusion">
+  <div class="method-head">
+    <div class="mk">Single method</div>
+    <h3>Look for evidence against the conclusion</h3>
+  </div>
+  <div class="method-facets">
+<div class="facet"><div class="fk">Does</div><div class="fv">Once there is a conclusion, actively searches for evidence that it is wrong and deals with the strongest thing it finds.</div></div>
+<div class="facet"><div class="fk">Replicates (human practice)</div><div class="fv">The habit that most separates careful researchers from confident ones: trying to break your own conclusion before relying on it. Ordinary searching finds more of what you already believe. This deliberately looks the other way.</div></div>
+<div class="facet"><div class="fk">When to use</div><div class="fv">After reaching any conclusion that will inform a decision, and before writing it up as settled.</div></div>
+  </div>
+  <div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">Take the conclusion we have reached and try to disprove it.
+
+Use the conclusion from our chat. If it is not clear which one I mean, ask.
+
+Search for evidence that it is wrong, not more evidence that it is right. Word
+the searches to find the opposite: if the conclusion is that something works,
+search for reports of it failing, criticism of it, or cases where it was
+overstated.
+
+Then take the strongest thing you find and address it directly. If it changes
+the conclusion, say how. If it does not, explain why. Do not give me a vague
+&quot;there are other views&quot; hedge. I want the strongest actual objection and a real
+response to it.</pre>
+  </div>
+</div>
+<div class="method" id="test-the-draft">
+  <div class="method-head">
+    <div class="mk">Single method</div>
+    <h3>Test the draft</h3>
+  </div>
+  <div class="method-facets">
+<div class="facet"><div class="fk">Does</div><div class="fv">Checks a finished piece of research against the standards and reports where it falls short.</div></div>
+<div class="facet"><div class="fk">Replicates (human practice)</div><div class="fv">The final read-through a careful researcher gives their own work, looking for claims that outran their evidence.</div></div>
+<div class="facet"><div class="fk">When to use</div><div class="fv">On a finished draft, including one written without any of these steps. It catches problems, though it cannot go back and do checking that never happened.</div></div>
+  </div>
+  <div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">Check the draft against these standards and report every place it falls short.
+
+Use the draft already in this chat. If there is none, ask me for it. Do not
+rewrite it; just tell me what fails and where.
+
+- Every stated fact traces to a source good enough to support it (a primary
+  document, official body, peer-reviewed work, or named specialist reporting).
+- Anything not confirmed is marked as unconfirmed, not stated as fact and not
+  quietly left out.
+- The conclusion names the specific claims it rests on, and each is confirmed.
+- The strongest case against the conclusion is addressed, not avoided.
+
+For each failure, quote the sentence and say which standard it misses.</pre>
+  </div>
+</div>    </div>
+  </section>
+  <section class="sec">
+    <div class="inner">
+      <div class="lib-group" style="margin-top:0">Run one step</div>
+<div class="method" style="border-left-color:var(--warm-700)">
+  <div class="method-head"><div class="mk">Whole step</div><h3>Frame the topic</h3></div>
+  <div class="method-facets">
+    <div class="facet"><div class="fk">Does</div><div class="fv">Runs the whole framing step: restates the question, checks whether it is the right one, and marks where the effort should go.</div></div>
+    <div class="facet"><div class="fk">When to use</div><div class="fv">As the opening of a new piece of research, or to fix a question that drifted partway through.</div></div>
+  </div>
+  <div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">Work through the framing of this research with me before searching.
+
+Use the topic we have been discussing, or ask me for it if there is none yet.
+
+1. Restate it as the decision it informs, the questions needed to make that
+   decision, and the evidence that would answer them.
+2. Tell me whether the question as posed is the right one, and whether a nearby
+   question would be more worth researching.
+3. Once we agree the question, mark which parts are background and which the
+   conclusion will depend on, so we know where to go deep.
+
+Wait for me to confirm the framing before moving on.</pre>
+  </div>
+</div>
+<div class="method" style="border-left-color:var(--warm-700)">
+  <div class="method-head"><div class="mk">Whole step</div><h3>Gather and verify</h3></div>
+  <div class="method-facets">
+    <div class="facet"><div class="fk">Does</div><div class="fv">Runs the gathering step with the sourcing discipline built in: spotting leads, chasing details to good sources, recording each claim&#x27;s status, and knowing when to stop.</div></div>
+    <div class="facet"><div class="fk">When to use</div><div class="fv">For a research session where getting the sources right is what matters.</div></div>
+  </div>
+  <div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">Research this question, working to these rules the whole way through.
+
+Use the question we have settled on, or ask me for it.
+
+- As you read, flag leads worth following: named people, referenced but unlinked
+  documents, conflicting numbers, and things that should be present and are
+  missing.
+- Treat weak sources (marketing, social posts, unattributed articles) as leads
+  only. Take the checkable detail out and confirm it against a primary document,
+  official body, peer-reviewed work, or named specialist reporting.
+- Record every claim that matters in a table: the claim, whether the conclusion
+  depends on it, its status, its best source and what kind it is, and what you
+  searched.
+- Do not rest anything important on a single source when a second could be
+  found. After three failed searches for a detail, mark it unconfirmed and move
+  on.
+
+Show me the table as you build it, and tell me what you could not confirm.</pre>
+  </div>
+</div>
+<div class="method" style="border-left-color:var(--warm-700)">
+  <div class="method-head"><div class="mk">Whole step</div><h3>Analyse</h3></div>
+  <div class="method-facets">
+    <div class="facet"><div class="fk">Does</div><div class="fv">Runs the analysis step: putting things side by side, reading the shape and the differences, and checking whether the comparison holds together.</div></div>
+    <div class="facet"><div class="fk">When to use</div><div class="fv">Once you have material and want findings that are not sitting in any single source.</div></div>
+  </div>
+  <div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">Help me analyse the material we have, rather than summarise it. I want findings
+that are not obvious from any single source.
+
+Use the material already in this chat, or ask me where it is.
+
+- Where two things can be set against each other (a policy against a lifecycle,
+  one option against another), lay them out and read the shape of the result:
+  where things spread, bunch, crowd or leave gaps, and what that implies.
+- Where the two are peers, tell me where they differ: what each treats as
+  central, where one is specific and the other vague.
+- If a comparison does not hold together, say so and suggest a better one rather
+  than forcing it.
+
+For each finding, tell me what in the material supports it.</pre>
+  </div>
+</div>
+<div class="method" style="border-left-color:var(--warm-700)">
+  <div class="method-head"><div class="mk">Whole step</div><h3>Conclude</h3></div>
+  <div class="method-facets">
+    <div class="facet"><div class="fk">Does</div><div class="fv">Runs the concluding step: building the finding from what was actually verified, testing it against contrary evidence, showing what it rests on, and checking the draft.</div></div>
+    <div class="facet"><div class="fk">When to use</div><div class="fv">When the research is done and you need a conclusion you can stand behind. It also works as a quality check on someone else&#x27;s finished work.</div></div>
+  </div>
+  <div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">We are ready to conclude. Work from the research in this chat, and work through
+these in order.
+
+1. State what the verified material actually supports. Not the direction most of
+   the material seems to point, but what has actually been confirmed.
+2. Try to disprove that conclusion. Search for evidence against it, worded to
+   find the opposite. Address the strongest objection you find.
+3. Write the conclusion so it names the specific claims it rests on, each
+   confirmed.
+4. Check the result: every fact traceable to a good source, anything unconfirmed
+   marked as such, the contrary case addressed.
+
+Show me the conclusion and the claims it depends on.</pre>
+  </div>
+</div>    </div>
+  </section>
+  <section class="sec bedrock" id="full">
+    <div class="inner">
+      <div class="lib-group" style="margin-top:0;color:var(--teal-300);border-color:#33333f">Install the whole thing</div>
+      <h2 style="font-family:var(--font-serif);font-size:1.5rem;color:var(--warm-100);margin-bottom:var(--sp-md)">The full standing instruction</h2>
+      <p style="color:var(--neutral-300);max-width:64ch;margin-bottom:var(--sp-sm)">This is all the research steps as a single standing instruction. It goes into a project&#x27;s instructions or an agent, where it applies on every task without being pasted each time. It carries all four steps, the standards that apply throughout, and the rules for going back when something breaks.</p>
+      <p style="color:var(--neutral-300);max-width:64ch;margin-bottom:var(--sp-lg)">Because it sits in the background across a whole project, it starts by working out whether the current request is actually research. Most messages in a project are not: they are follow-ups, edits, or unrelated questions. The instruction applies the steps to research tasks and stays out of the way otherwise.</p>
+      <div class="prompt-wrap" style="background:#fff">
+        <div class="prompt-bar"><span>Standing instruction / for a project or agent</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+        <pre class="prompt">You are helping with professional work that often, but not always, involves
+research. Before anything else, work out what the current request is.
+
+If it asks you to research a topic, investigate a question, assess a claim,
+or verify or compare information, apply the research steps below. If it is a follow-up to research already under way,
+stay inside the current step: update the record, reopen a claim, continue the step we
+are in, rather than starting over. If it is a different kind of task, or a
+question about earlier output, respond normally and draw on the steps only
+where they help. Do not force framing and searching onto a request that is not
+research.
+
+When you do apply them, take what you need (the topic, the material, the
+things to compare) from the conversation, and ask only for what is missing.
+
+FRAME. Before searching, turn the topic into a researchable question. Restate it
+as the decision it informs, the questions needed to make that decision, and the
+evidence that would answer them. Tell me if a nearby question is more worth
+researching. For a substantial task, propose how you will approach it and wait
+for me to confirm before doing the work.
+
+GATHER AND VERIFY. As you read, flag leads: named people, referenced but
+unlinked documents, conflicting numbers, and things that should be present and
+are missing. Treat weak sources as leads only; take the checkable detail out and
+confirm it against a primary document, official body, peer-reviewed work, or
+named specialist reporting. Do not rest anything important on a single source
+when a second could be found. After three failed searches for a detail, mark it
+unconfirmed and move on.
+
+ANALYSE. Produce findings that are not sitting in any single source. Where two
+things can be set against each other, lay them out and read the shape of the
+result, not just the cells. Where they are peers, read the differences. If a
+comparison does not hold, say so rather than forcing it.
+
+CONCLUDE. State what the verified material actually supports. Then try to
+disprove it: search for evidence against the conclusion, worded to find the
+opposite, and address the strongest objection. Name the specific claims the
+conclusion rests on, each confirmed.
+
+THROUGHOUT. Rank every source: primary documents and institutional sources can
+support a stated fact; general press supports a fact with attribution; vendor
+marketing, social posts and unattributed material support nothing but can point
+to leads. As each claim comes up, decide how much the conclusion rides on it,
+and match the effort to that: background gets one source, a stated fact gets the
+full chase, a claim the conclusion depends on also gets the search for contrary
+evidence. Keep a running record of every claim that matters, its status, its
+best source, and what was searched. State as fact only what is confirmed; flag
+everything unconfirmed.
+
+REVISIT. After each step, check whether what you found changes the basis of an
+earlier one, and reapply that step if it does. A comparison that will not hold
+means the question was framed wrongly: return to framing. A claim that fails its
+check undoes whatever was built on it: reopen that. Contrary evidence that
+shifts a claim reopens every finding that rested on it.</pre>
+      </div>
+    </div>
+  </section>
+  <footer class="sec" style="border-bottom:0">
+    <div class="inner foot">
+      <span>AIGroundwork / research methods for professional work</span>
+      <span><a href="how-it-works.html">How it works</a> &nbsp; <a href="steps.html">The four steps</a> &nbsp; <a href="prompts.html">Prompt library</a></span>
+    </div>
+  </footer>
+</div>
+<script src="assets/copy.js"></script>
+</body>
+</html>
