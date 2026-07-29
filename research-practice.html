@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research practice: AIGroundwork</title>
-<meta name="description" content="The four-step research method explained: what each step is, the methods inside it, and the standards that hold throughout.">
+<meta name="description" content="The four-step research method explained: what each step is, what a careful researcher does there, and the methods inside it.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -19,101 +19,39 @@
         <a href="system-prompt.html">System prompt</a>
       </nav>
     </div>
-  </header>  <div class="tracker">
-    <div class="row"><a href="#frame" class="here"><span class="n">01</span><span class="lbl">Frame the topic</span></a><a href="#gather"><span class="n">02</span><span class="lbl">Gather and verify</span></a><a href="#analyse"><span class="n">03</span><span class="lbl">Analyse</span></a><a href="#conclude"><span class="n">04</span><span class="lbl">Conclude</span></a></div>
-  </div>
-  <section class="sec" style="padding-top:var(--sp-2xl)">
-    <span class="tick" style="top:112px">00</span>
+  </header>  <section class="sec" style="border-bottom:0">
     <div class="inner">
-      <div class="page-head" style="border-bottom:0;padding:0">
+      <div class="pagehead">
         <div class="kicker">Research practice</div>
-        <h1>The four-step method, explained.</h1>
-        <div class="intro">
-          <p>This is the framework the prompts are built on. Careful research runs through four steps, each resting on the one before, with a set of standards that hold the whole way through. Read it to understand what the prompts are doing and why.</p>
-          <p>The steps are not strictly one-way. Something found late can send you back to redo an earlier part. Each step below lists the methods it involves; where a method also has a prompt you can run on its own, that is noted, and the prompts themselves live in the <a href="prompt-library.html" style="color:var(--teal-700);text-decoration:underline">prompt library</a>.</p>
+        <h1>The four-step method, and why it is these four</h1>
+        <div class="desc">
+          <p>Careful research is not one act; it is four kinds of work that build on each other. You frame a topic into a question worth answering. You gather material and work out what can be trusted. You analyse it into findings that are not sitting in any single source. Then you conclude, and test the conclusion before you rely on it. Skip one and the others suffer: gathering without framing wastes effort on the wrong question; concluding without analysis is just the largest pile of evidence winning.</p>
+          <p>Each step is something a good researcher does by habit and an AI does not do on its own. This page explains them. The prompts that carry them out are in the <a href="prompt-library.html" style="color:var(--teal-700);text-decoration:underline">prompt library</a>. Underneath all four run a set of standards that hold the whole way through.</p>
         </div>
       </div>
-      <div class="stepzone sz1" id="frame">
-        <div class="stepzone-banner">
-          <div class="num"><span class="big">01</span><span class="lvl">Frame</span></div>
-          <div class="head"><h2>Frame the topic</h2><p>Turn a topic into a question you can actually research, before any searching starts. An AI will not question a badly framed topic; it answers what it is given. A researcher works out what decision the research serves and what a useful answer looks like first, and often finds the question worth answering sits just to one side of the one that was asked.</p></div>
-        </div>
-        <div class="stepzone-methods">
-          <div class="zone-label">Methods in this step</div>
-          <div class="m-row">
-          <div><div class="mtitle">Restate the question</div><div class="mdesc">Rewrite the topic as three things: the decision it informs, the questions you would need to answer to make it, and the evidence that would answer them. A topic that cannot be rewritten this way is not yet ready to research.</div></div>
-          <span class="tag has">Has a prompt</span>
-        </div><div class="m-row">
-          <div><div class="mtitle">Check the framing</div><div class="mdesc">Say what nearby or better question the topic points to, and what the version as asked might miss.</div></div>
-          <span class="tag folded">Part of the step</span>
-        </div><div class="m-row">
-          <div><div class="mtitle">Place the effort</div><div class="mdesc">Mark which lines of enquiry are background and which the conclusion will hang on, so the deep work goes where it matters.</div></div>
-          <span class="tag folded">Part of the step</span>
-        </div>
-        </div>
+      <div class="fstep inner" id="frame" style="max-width:none">
+        <div class="fstep-top"><span class="fn">01</span><h2>Frame the topic</h2></div>
+        <div class="fstep-lede"><p>This step turns a topic into a question you can actually research, before any searching starts.</p><p>An AI will not question a badly framed topic; it answers what you give it. A researcher works differently. Handed a broad brief, they first ask what decision the research is meant to inform and what a useful answer would look like. Often the question worth answering turns out to sit just to one side of the one that was asked.</p></div>
+        <div class="fstep-methods"><div class="fmethod"><div class="fmn">Restate the question<span class="avail">Has its own prompt</span></div><div class="fmd">Rewrite the topic three ways: the decision it informs, the questions you would need to answer to make that decision, and the evidence that would answer them. If a topic cannot be rewritten like this, it is not yet ready to research.</div></div><div class="fmethod"><div class="fmn">Check the framing<span class="avail folded">Part of the step prompt</span></div><div class="fmd">Say what nearby or better question the topic points to, and what the version as asked might miss.</div></div><div class="fmethod"><div class="fmn">Place the effort<span class="avail folded">Part of the step prompt</span></div><div class="fmd">Mark which lines of enquiry are just background and which the conclusion will hang on, so the deep work goes where it matters.</div></div></div>
+        <p class="fstep-note">This step works best as a conversation at the start, because the reframing usually needs a decision from you, not just an answer from the AI.</p>
       </div>
-      <div class="stepzone sz2" id="gather">
-        <div class="stepzone-banner">
-          <div class="num"><span class="big">02</span><span class="lvl">Gather</span></div>
-          <div class="head"><h2>Gather and verify</h2><p>Collect material and work out what can be trusted, one item at a time. This is where an AI on its own falls furthest short: it reads the top few results and stops. The methods here keep it chasing details to sources that can actually support them, and recording what has and has not been confirmed.</p></div>
-        </div>
-        <div class="stepzone-methods">
-          <div class="zone-label">Methods in this step</div>
-          <div class="m-row">
-          <div><div class="mtitle">Spot the lead</div><div class="mdesc">Notice the details worth following up, even in a poor source: a named person, a document referred to but not linked, a number that conflicts with another, and things that should be present and are missing.</div></div>
-          <span class="tag has">Has a prompt</span>
-        </div><div class="m-row">
-          <div><div class="mtitle">Chase the detail</div><div class="mdesc">Take a checkable specific out of a weak source and confirm it against one that can actually stand behind it. A weak source is a lead, not evidence.</div></div>
-          <span class="tag has">Has a prompt</span>
-        </div><div class="m-row">
-          <div><div class="mtitle">Resolve and record claims</div><div class="mdesc">Keep a running record of every claim that matters, its status, and its source, so nothing is silently asserted or silently dropped.</div></div>
-          <span class="tag has">Has a prompt</span>
-        </div><div class="m-row">
-          <div><div class="mtitle">Know when to stop</div><div class="mdesc">A floor and a ceiling: do not rest anything important on a single source when a second could be found, and after three failed searches for a detail, mark it unconfirmed and move on.</div></div>
-          <span class="tag folded">Part of the step</span>
-        </div>
-        </div>
+      <div class="fstep inner" id="gather" style="max-width:none">
+        <div class="fstep-top"><span class="fn">02</span><h2>Gather and verify</h2></div>
+        <div class="fstep-lede"><p>This step collects material and works out what in it can be trusted. The two happen together, one item at a time, not in separate passes.</p><p>This is where an AI on its own falls furthest short: it reads the top few results and stops. The methods here keep it chasing details to sources that can stand behind them, and recording what has and has not been confirmed.</p></div>
+        <div class="fstep-methods"><div class="fmethod"><div class="fmn">Spot the lead<span class="avail">Has its own prompt</span></div><div class="fmd">Some details are always worth a follow-up, even in a poor source: a named person moving between organisations, a filing mentioned but not linked, a number that clashes with one you already have, and things that should be present and are missing. Missing things matter most and are the easiest to overlook.</div></div><div class="fmethod"><div class="fmn">Chase the detail<span class="avail">Has its own prompt</span></div><div class="fmd">Pull the checkable specifics out of a weak source, the names, dates, figures and references, and follow them to a source that can back them up. A weak source is never evidence; it is a supply of things to check.</div></div><div class="fmethod"><div class="fmn">Resolve and record claims<span class="avail">Has its own prompt</span></div><div class="fmd">Every detail you chase ends in one of three states, written down: confirmed, contradicted, or unconfirmed and flagged. Those three endings prevent the two quiet failures, a weak claim slipping through as fact, and a real lead getting dropped because its first source was poor.</div></div><div class="fmethod"><div class="fmn">Know when to stop<span class="avail folded">Part of the step prompt</span></div><div class="fmd">Set a floor and a ceiling. Nothing the conclusion depends on should rest on a single source when a second could be found. Once three searches for a detail have failed, mark it unconfirmed and move on.</div></div></div>
+        
       </div>
-      <div class="stepzone sz3" id="analyse">
-        <div class="stepzone-banner">
-          <div class="num"><span class="big">03</span><span class="lvl">Analyse</span></div>
-          <div class="head"><h2>Analyse</h2><p>Produce findings that are not sitting in any single source. This is what separates real analysis from a summary. The core move is combination: putting two things side by side and reading what comes out of the comparison.</p></div>
-        </div>
-        <div class="stepzone-methods">
-          <div class="zone-label">Methods in this step</div>
-          <div class="m-row">
-          <div><div class="mtitle">Put two patterns side by side</div><div class="mdesc">Lay one thing against another in a table and read the shape of the result, not the individual cells: where things spread, bunch, crowd or leave gaps, and what that implies.</div></div>
-          <span class="tag has">Has a prompt</span>
-        </div><div class="m-row">
-          <div><div class="mtitle">Read the differences</div><div class="mdesc">When the two are peers, the finding is in where they differ: what each treats as central, where one is specific and the other vague or silent.</div></div>
-          <span class="tag folded">Part of the step</span>
-        </div><div class="m-row">
-          <div><div class="mtitle">Check the fit</div><div class="mdesc">If most of one will not line up against the other, the finding is that they do not belong together. Say so and suggest a better pairing rather than forcing it.</div></div>
-          <span class="tag folded">Part of the step</span>
-        </div>
-        </div>
+      <div class="fstep inner" id="analyse" style="max-width:none">
+        <div class="fstep-top"><span class="fn">03</span><h2>Analyse</h2></div>
+        <div class="fstep-lede"><p>This step produces findings that are not sitting in any single source. It is what separates real analysis from a summary.</p><p>An AI does none of it on its own; asked to analyse, it gives you a summary with commentary attached. The main move is combination: putting two things side by side and reading what comes out.</p></div>
+        <div class="fstep-methods"><div class="fmethod"><div class="fmn">Put two patterns side by side<span class="avail">Has its own prompt</span></div><div class="fmd">Lay one thing against another in a table, then read the shape of the result, not the cells. Obligations spread across every stage though they came from one statement point to a coordination problem; obligations bunched into an easy group and a hard group point to a feasibility problem. Name the shape you want, spread, clustering, concentration, gaps, or the AI just reports each cell.</div></div><div class="fmethod"><div class="fmn">Read the differences<span class="avail folded">Part of the step prompt</span></div><div class="fmd">When the two things are peers, the finding is where they differ: where one is specific and the other vague, how they divide the subject up, what each treats as central.</div></div><div class="fmethod"><div class="fmn">Check the fit<span class="avail folded">Part of the step prompt</span></div><div class="fmd">Sometimes most of one thing will not line up against the other. Then the finding is that the two do not belong together. Say so and suggest a better pairing rather than forcing the comparison.</div></div></div>
+        
       </div>
-      <div class="stepzone sz4" id="conclude">
-        <div class="stepzone-banner">
-          <div class="num"><span class="big">04</span><span class="lvl">Conclude</span></div>
-          <div class="head"><h2>Conclude</h2><p>Test the finding and put it in a form you can trust. Search for evidence against the conclusion, state what the checked material actually supports, and show which claims it rests on.</p></div>
-        </div>
-        <div class="stepzone-methods">
-          <div class="zone-label">Methods in this step</div>
-          <div class="m-row">
-          <div><div class="mtitle">Look for evidence against the conclusion</div><div class="mdesc">Once you have a conclusion, search for evidence that it is wrong, worded to find the opposite, and deal with the strongest objection you find.</div></div>
-          <span class="tag has">Has a prompt</span>
-        </div><div class="m-row">
-          <div><div class="mtitle">Build the finding</div><div class="mdesc">State what the checked material actually supports, which is not always the direction most of the material seems to point.</div></div>
-          <span class="tag folded">Part of the step</span>
-        </div><div class="m-row">
-          <div><div class="mtitle">Show what it rests on</div><div class="mdesc">The conclusion names the specific claims it depends on, and each of those has been confirmed.</div></div>
-          <span class="tag folded">Part of the step</span>
-        </div><div class="m-row">
-          <div><div class="mtitle">Test the draft</div><div class="mdesc">Check a finished piece against the standards: every fact traceable to a good source, anything unconfirmed marked as such, the contrary case addressed.</div></div>
-          <span class="tag has">Has a prompt</span>
-        </div>
-        </div>
+      <div class="fstep inner" id="conclude" style="max-width:none">
+        <div class="fstep-top"><span class="fn">04</span><h2>Conclude</h2></div>
+        <div class="fstep-lede"><p>This step tests the finding and puts it in a form you can trust.</p><p>The difference between an adequate conclusion and a sound one is mostly here: stating only what was actually confirmed, and actively looking for the evidence that would prove the conclusion wrong before relying on it.</p></div>
+        <div class="fstep-methods"><div class="fmethod"><div class="fmn">Look for evidence against the conclusion<span class="avail">Has its own prompt</span></div><div class="fmd">Search for evidence the conclusion is wrong, not more that it is right. Word the search to find the opposite, then deal with the strongest objection you find even when it does not change the answer. &quot;Consider other views&quot; produces a hedge; searching for the opposite produces new information.</div></div><div class="fmethod"><div class="fmn">Build the finding<span class="avail folded">Part of the step prompt</span></div><div class="fmd">State what the checked material actually supports, which is not always the direction most of the material seems to point.</div></div><div class="fmethod"><div class="fmn">Show what it rests on<span class="avail folded">Part of the step prompt</span></div><div class="fmd">The conclusion names the specific claims it depends on, and each of those has been confirmed.</div></div><div class="fmethod"><div class="fmn">Test the draft<span class="avail">Has its own prompt</span></div><div class="fmd">Check the finished piece against the standards: every fact traced to a good source, anything unconfirmed marked rather than asserted or dropped, the contrary case addressed. It catches problems even on work written without the method, though it cannot do the checking that never happened.</div></div></div>
+        
       </div>
     </div>
   </section>
@@ -122,11 +60,12 @@
     <div class="inner">
       <div class="callout">Bedrock <span class="ref">/ holds throughout</span></div>
       <h2>Standards that run under every step</h2>
+      <p style="color:var(--neutral-300);max-width:62ch;margin-bottom:var(--sp-lg)">These are not a fifth step. They apply at every step: how sources are ranked, how much effort a claim earns, the record kept as you go, and the rule that a late finding can send you back.</p>
       <div class="slab">
         <div class="s"><span class="k">ST-1</span><b>Rank the sources</b><span>Primary and institutional sources support a fact; weak sources only point to leads.</span></div>
-        <div class="s"><span class="k">ST-2</span><b>Match effort to stakes</b><span>Background gets one source; a load-bearing claim gets the full chase.</span></div>
-        <div class="s"><span class="k">ST-3</span><b>Keep a running record</b><span>Every claim that matters, its status, its best source.</span></div>
-        <div class="s"><span class="k">ST-4</span><b>Revisit</b><span>A finding that undoes earlier work sends the task back.</span></div>
+        <div class="s"><span class="k">ST-2</span><b>Match effort to stakes</b><span>Background gets one source; a load-bearing claim gets the full chase and the contrary search.</span></div>
+        <div class="s"><span class="k">ST-3</span><b>Keep a running record</b><span>Every claim that matters, its status, its best source, what was searched.</span></div>
+        <div class="s"><span class="k">ST-4</span><b>Revisit</b><span>A finding that undoes earlier work sends the task back to the step it affects.</span></div>
       </div>
     </div>
   </section>
@@ -135,20 +74,7 @@
       <span>AIGroundwork / research methods for professional work</span>
       <span><a href="research-practice.html">Research practice</a> &nbsp; <a href="prompt-library.html">Prompt library</a> &nbsp; <a href="system-prompt.html">System prompt</a></span>
     </div>
-  </footer><script>
-var steps=['frame','gather','analyse','conclude'];
-window.addEventListener('scroll',function(){
-  var pos=window.scrollY+160;
-  for(var i=steps.length-1;i>=0;i--){
-    var el=document.getElementById(steps[i]);
-    if(el&&el.offsetTop<=pos){
-      document.querySelectorAll('.tracker a').forEach(function(a){a.classList.remove('here');});
-      var link=document.querySelector('.tracker a[href="#'+steps[i]+'"]');
-      if(link)link.classList.add('here'); break;
-    }
-  }
-});
-</script>
-</div>
+  </footer></div>
+<script src="assets/copy.js"></script>
 </body>
 </html>
