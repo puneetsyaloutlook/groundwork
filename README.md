@@ -5,10 +5,11 @@ A static website. Research methods for professional work, written as prompts for
 ## What is here
 
 ```
-index.html          Home: the overview, the four situations, the four-step model
-how-it-works.html   The argument, the model, and the honest limits
-steps.html          The four steps, each with its methods and a prompt for every one
-prompts.html        The full prompt library, plus the standing instruction
+index.html            Home: the pitch and the four-step framework
+how-it-works.html     Why prompts that carry a method beat ordinary prompts
+research-practice.html The four-step framework explained in full (no prompts)
+prompt-library.html   The direct prompts you paste into a chat, by step
+system-prompt.html    The one standing instruction for a project or agent
 404.html            Not-found page
 assets/style.css    All styling
 assets/copy.js      Copy-to-clipboard for prompt blocks
