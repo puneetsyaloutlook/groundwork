@@ -152,7 +152,42 @@ End with a short process note:
   Did with it: [how the conclusion follows from them]
   Drift: [none, or where it departs; if a claim failed, say which step to reopen]
   Rests on: [the specific confirmed claims the conclusion depends on]</pre>
-  </div></div><div class="contains"><div class="contains-label">Sub-prompts for each research method within this step</div><div class="cmrow"><div class="cmn">Look for evidence against the conclusion</div><div class="cmd">Search for evidence the conclusion is wrong, not more that it is right. Word the search to find the opposite, then deal with the strongest objection you find even when it does not change the answer. &quot;Consider other views&quot; produces a hedge; searching for the opposite produces new information.</div><div class="cmlink" data-open="look-for-evidence-against-the-conclusion">Run alone</div></div><div class="cmrow"><div class="cmn">Build the finding</div><div class="cmd">State what the checked material actually supports, which is not always the direction most of the material seems to point.</div><div class="cmnote">no separate prompt</div></div><div class="cmrow"><div class="cmn">Show what it rests on</div><div class="cmd">The conclusion names the specific claims it depends on, and each of those has been confirmed.</div><div class="cmnote">no separate prompt</div></div><div class="cmrow"><div class="cmn">Test the draft</div><div class="cmd">Check the finished piece against the standards: every fact traced to a good source, anything unconfirmed marked rather than asserted or dropped, the contrary case addressed. It catches problems even on work written without the method, though it cannot do the checking that never happened.</div><div class="cmlink" data-open="test-the-draft">Run alone</div></div></div></div></div></section><div class="modal-bg" id="modal-bg"><div class="modal" data-modal="restate-the-question" style="display:none"><div class="modal-top"><div><div class="mk">Run just this method / Frame</div><h3>Restate the question</h3></div><button class="modal-close" aria-label="Close">&times;</button></div><div class="modal-body"><div class="modal-facets"><div><div class="fk">What it does</div><div class="fv">Turns a loose topic into a question you can actually research.</div></div><div><div class="fk">What it replicates</div><div class="fv">A researcher rarely takes a topic at face value. They work out what decision it serves and what a useful answer would look like, and often find the real question sits just to one side of the one they were handed.</div></div><div><div class="fk">When to use it</div><div class="fv">At the start of a piece of work, or partway through when you realise the question was never properly pinned down.</div></div></div><div class="prompt-wrap">
+  </div></div><div class="contains"><div class="contains-label">Sub-prompts for each research method within this step</div><div class="cmrow"><div class="cmn">Look for evidence against the conclusion</div><div class="cmd">Search for evidence the conclusion is wrong, not more that it is right. Word the search to find the opposite, then deal with the strongest objection you find even when it does not change the answer. &quot;Consider other views&quot; produces a hedge; searching for the opposite produces new information.</div><div class="cmlink" data-open="look-for-evidence-against-the-conclusion">Run alone</div></div><div class="cmrow"><div class="cmn">Build the finding</div><div class="cmd">State what the checked material actually supports, which is not always the direction most of the material seems to point.</div><div class="cmnote">no separate prompt</div></div><div class="cmrow"><div class="cmn">Show what it rests on</div><div class="cmd">The conclusion names the specific claims it depends on, and each of those has been confirmed.</div><div class="cmnote">no separate prompt</div></div><div class="cmrow"><div class="cmn">Test the draft</div><div class="cmd">Check the finished piece against the standards: every fact traced to a good source, anything unconfirmed marked rather than asserted or dropped, the contrary case addressed. It catches problems even on work written without the method, though it cannot do the checking that never happened.</div><div class="cmlink" data-open="test-the-draft">Run alone</div></div></div></div><div class="lstep inner" id="report" style="max-width:none"><div class="lstep-top"><span class="ln">05</span><h2>Report</h2></div><p class="lstep-desc">Turn the concluded research into the layered post people will actually read.</p><div class="step-primary"><div class="step-primary-label">Prompt to run this complete step</div><div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">Turn the concluded research into a report for internal sharing. Work from the
+research in this chat, or ask me where it is.
+
+Start by restating what you are inheriting: the decision this served, the
+confirmed conclusion, and the claims it rests on. Report only what was
+confirmed. Anything unconfirmed is named as such or left out, not smoothed into
+the prose.
+
+Produce three layers, each doing only its own job.
+
+1. Top post. The specific finding, stated as a fact, and one sentence on why it
+   matters to the people who will read it. Name the actual development, not a
+   category. Nothing else goes here.
+2. Thread. The questions a reader has right after the finding: why now, what has
+   actually changed, who should care, and any flag. Short paragraphs, the
+   load-bearing word first. One comparison or piece of context if it earns its
+   place. Do not walk through the source material in order.
+3. Linked document. The full treatment, for the reader who wants depth: the
+   finding stated first, then the evidence with its sourcing and how well each
+   claim is stood up, the second-order implications, and the limits. Front-load
+   the conclusion within each section rather than building up to it.
+
+Keep the finding the same across all three layers; the layers differ in depth,
+not in what they claim. State the conclusion first, never buried in a closing
+line. Plain declarative sentences.
+
+End with a short process note:
+
+  PROCESS NOTE
+  Inherited: [the decision, conclusion, and confirmed claims you reported from]
+  Did with it: [how the finding is carried across the three layers]
+  Drift: [none, or where the report departs from the conclusion and why]
+  Rests on: [the confirmed claims the report presents as fact]</pre>
+  </div></div><div class="contains"><div class="contains-label">Sub-prompts for each research method within this step</div><div class="cmrow"><div class="cmn">Write the top post</div><div class="cmd">The specific finding stated as a fact, and one sentence on why it matters to the reader. The actual development, not a category label. Nothing else.</div><div class="cmlink" data-open="write-the-top-post">Run alone</div></div><div class="cmrow"><div class="cmn">Write the thread</div><div class="cmd">The questions a reader has right after the finding: why now, what changed, who should care. Short paragraphs, the load-bearing word first.</div><div class="cmlink" data-open="write-the-thread">Run alone</div></div><div class="cmrow"><div class="cmn">Write the linked document</div><div class="cmd">The full treatment for the reader who wants depth: finding first, then the evidence with its sourcing and how well each claim stands up, the implications, and the limits.</div><div class="cmlink" data-open="write-the-linked-document">Run alone</div></div><div class="cmrow"><div class="cmn">Hold the layers apart</div><div class="cmd">Each layer does only its own job. Content that leaks up or down the chain breaks the structure, so the top post does not do the thread&#x27;s work and the thread does not do the document&#x27;s.</div><div class="cmnote">no separate prompt</div></div></div></div></div></section><div class="modal-bg" id="modal-bg"><div class="modal" data-modal="restate-the-question" style="display:none"><div class="modal-top"><div><div class="mk">Run just this method / Frame</div><h3>Restate the question</h3></div><button class="modal-close" aria-label="Close">&times;</button></div><div class="modal-body"><div class="modal-facets"><div><div class="fk">What it does</div><div class="fv">Turns a loose topic into a question you can actually research.</div></div><div><div class="fk">What it replicates</div><div class="fv">A researcher rarely takes a topic at face value. They work out what decision it serves and what a useful answer would look like, and often find the real question sits just to one side of the one they were handed.</div></div><div><div class="fk">When to use it</div><div class="fv">At the start of a piece of work, or partway through when you realise the question was never properly pinned down.</div></div></div><div class="prompt-wrap">
     <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
     <pre class="prompt">Help me turn what I am researching into a properly researchable question.
 
@@ -263,6 +298,42 @@ rewrite it; just tell me what fails and where.
 - The strongest case against the conclusion is addressed, not avoided.
 
 For each failure, quote the sentence and say which standard it misses.</pre>
+  </div></div></div><div class="modal" data-modal="write-the-top-post" style="display:none"><div class="modal-top"><div><div class="mk">Run just this method / Report</div><h3>Write the top post</h3></div><button class="modal-close" aria-label="Close">&times;</button></div><div class="modal-body"><div class="modal-facets"><div><div class="fk">What it does</div><div class="fv">Produces just the top post layer from a finished report or conclusion: the finding and why it matters.</div></div><div><div class="fk">What it replicates</div><div class="fv">The judgment of stating the single most relevant fact plainly and its relevance to the reader, resisting the urge to add context that belongs a layer down.</div></div><div><div class="fk">When to use it</div><div class="fv">When you have a report or conclusion you are happy with and want the one-glance version for a channel.</div></div></div><div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">Write the top post for this research, for an internal channel.
+
+Use the report or conclusion already in this chat. If there is none, ask me for
+it.
+
+Two sentences. First, the specific finding stated as a fact, naming the actual
+development rather than a category. Second, why it matters to the people who
+will read it. Nothing else: no context, no detail, no third sentence. That is
+the thread&amp;#x27;s job.</pre>
+  </div></div></div><div class="modal" data-modal="write-the-thread" style="display:none"><div class="modal-top"><div><div class="mk">Run just this method / Report</div><h3>Write the thread</h3></div><button class="modal-close" aria-label="Close">&times;</button></div><div class="modal-body"><div class="modal-facets"><div><div class="fk">What it does</div><div class="fv">Produces just the thread layer: the questions a reader has right after the finding.</div></div><div><div class="fk">What it replicates</div><div class="fv">Knowing which two or three questions a reader actually has next, and answering them without retelling the whole thing.</div></div><div><div class="fk">When to use it</div><div class="fv">When you have the finding settled and want the middle layer that earns the click to the full document.</div></div></div><div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">Write the thread for this research, the layer under the top post.
+
+Use the report or conclusion already in this chat. If there is none, ask me for
+it.
+
+Answer the questions a reader has right after the finding: why now, what has
+actually changed, and who should care. Short paragraphs, the load-bearing word
+first in each. One comparison or piece of context if it earns its place. Do not
+walk through the source material in order, and do not restate the top post or
+pull in the full document&amp;#x27;s depth.</pre>
+  </div></div></div><div class="modal" data-modal="write-the-linked-document" style="display:none"><div class="modal-top"><div><div class="mk">Run just this method / Report</div><h3>Write the linked document</h3></div><button class="modal-close" aria-label="Close">&times;</button></div><div class="modal-body"><div class="modal-facets"><div><div class="fk">What it does</div><div class="fv">Produces just the full document layer: the depth, sourcing and limits for the reader who wants all of it.</div></div><div><div class="fk">What it replicates</div><div class="fv">Writing the full account for an engaged reader, conclusion first, with the evidence and its limits laid out honestly.</div></div><div><div class="fk">When to use it</div><div class="fv">When you want the depth layer written up on its own, for a wiki page or a longer document.</div></div></div><div class="prompt-wrap">
+    <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
+    <pre class="prompt">Write the full document for this research, the layer people reach when they want
+depth.
+
+Use the report or conclusion already in this chat. If there is none, ask me for
+it.
+
+Lead with the finding, then give the evidence with its sourcing and how well
+each claim is stood up, the second-order implications, and the limits and what
+was not confirmed. Front-load the conclusion within each section rather than
+building up to it. Plain declarative prose. Report only what was confirmed;
+anything unconfirmed is named as such.</pre>
   </div></div></div></div>  <footer class="sec" style="border-bottom:0">
     <div class="inner foot">
       <span>AIGroundwork / research methods for professional work</span>
