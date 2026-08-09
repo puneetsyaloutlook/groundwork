@@ -189,3 +189,18 @@ pre.prompt{margin:0;padding:var(--lg);font-family:var(--mono);font-size:0.9rem;l
 .tracker a.here{color:var(--ink);}
 .tracker a.here .n{color:var(--teal);}
 @media(max-width:640px){.tracker a .lbl{display:none;}.tracker a{justify-content:center;}}
+
+/* ============ v5: containment layout for library ============ */
+.lstep-desc{color:var(--ink-soft);font-size:1rem;margin-bottom:var(--lg);max-width:70ch;}
+.step-primary{margin-bottom:var(--lg);}
+.step-primary-label{font-size:0.85rem;font-weight:700;color:var(--ink);margin-bottom:var(--sm);}
+.contains{border-top:1px solid var(--line);padding-top:var(--lg);}
+.contains-label{font-family:var(--mono);font-size:0.78rem;color:var(--muted);margin-bottom:var(--md);}
+.cmrow{display:grid;grid-template-columns:200px 1fr auto;gap:var(--lg);align-items:baseline;padding:var(--md) 0;border-top:1px solid var(--line-soft);}
+.cmrow:first-of-type{border-top:0;}
+.cmrow .cmn{font-weight:600;font-size:0.96rem;}
+.cmrow .cmd{color:var(--ink-soft);font-size:0.92rem;}
+.cmrow .cmlink{font-size:0.85rem;font-weight:600;color:var(--teal);white-space:nowrap;cursor:pointer;}
+.cmrow .cmlink:hover{text-decoration:underline;}
+.cmrow .cmnote{font-size:0.82rem;color:var(--muted);white-space:nowrap;}
+@media(max-width:680px){.cmrow{grid-template-columns:1fr;gap:2px;}.cmrow .cmlink,.cmrow .cmnote{justify-self:start;margin-top:var(--xs);}}
