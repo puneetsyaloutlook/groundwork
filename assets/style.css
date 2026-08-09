@@ -44,13 +44,13 @@ h1,h2,h3,p,li{overflow-wrap:break-word;}
 .pagehead,.page-head{padding:var(--xxl) 0 var(--lg);}
 .kicker{font-size:0.8rem;font-weight:600;letter-spacing:0.02em;text-transform:uppercase;color:var(--teal);margin-bottom:var(--sm);}
 .pagehead h1,.page-head h1{font-weight:700;font-size:clamp(1.5rem,3vw,2rem);letter-spacing:-0.01em;line-height:1.15;}
-.pagehead .desc,.page-head .intro{margin-top:var(--md);max-width:66ch;color:var(--ink-soft);font-size:1.05rem;}
+.pagehead .desc,.page-head .intro{margin-top:var(--md);color:var(--ink-soft);font-size:1.05rem;}
 .pagehead .desc p+p,.page-head .intro p+p{margin-top:var(--md);}
 
 /* ---- home hero (only the home page) ---- */
 .hero{padding:var(--xxl) 0 var(--xl);}
 .hero h1.display{font-family:var(--serif);font-weight:700;font-size:clamp(2rem,4.4vw,3rem);line-height:1.08;letter-spacing:-0.02em;max-width:20ch;}
-.hero .lead{margin-top:var(--lg);max-width:64ch;font-size:1.12rem;color:var(--ink-soft);}
+.hero .lead{margin-top:var(--lg);font-size:1.12rem;color:var(--ink-soft);}
 .hero .lead strong{color:var(--ink);font-weight:600;}
 .callout{font-family:var(--mono);font-size:0.78rem;color:var(--teal);margin-bottom:var(--md);}
 
@@ -60,12 +60,12 @@ h1,h2,h3,p,li{overflow-wrap:break-word;}
 .datum-row .d b{color:var(--ink);}
 
 /* ---- prose ---- */
-.prose{max-width:66ch;}
+.prose{}
 .prose p{margin-top:var(--md);color:var(--ink-soft);}
 .prose p:first-child{margin-top:0;}
 .prose p strong{color:var(--ink);}
 h2.head{font-family:var(--serif);font-weight:700;font-size:1.6rem;letter-spacing:-0.01em;}
-.strata-head{max-width:60ch;margin-bottom:var(--lg);}
+.strata-head{margin-bottom:var(--lg);}
 .strata-head p{margin-top:var(--sm);color:var(--ink-soft);}
 
 /* ---- home strata (four steps preview) ---- */
@@ -82,7 +82,7 @@ h2.head{font-family:var(--serif);font-weight:700;font-size:1.6rem;letter-spacing
 .depth .lvl{font-family:var(--mono);font-size:0.6rem;letter-spacing:0.06em;opacity:.9;}
 .stratum-body{padding:var(--md) var(--lg);}
 .stratum-body h3{font-size:1.1rem;font-weight:700;}
-.stratum-body p{margin-top:2px;color:var(--ink-soft);font-size:0.95rem;max-width:60ch;}
+.stratum-body p{margin-top:2px;color:var(--ink-soft);font-size:0.95rem;}
 .stratum-body .methods{margin-top:var(--sm);display:flex;flex-wrap:wrap;gap:6px;}
 .stratum-body .methods span{font-family:var(--mono);font-size:0.72rem;color:var(--muted);}
 .stratum-body .methods span:not(:last-child)::after{content:"·";margin-left:6px;}
@@ -110,16 +110,16 @@ h2.head{font-family:var(--serif);font-weight:700;font-size:1.6rem;letter-spacing
 .fstep-top{display:flex;align-items:baseline;gap:var(--md);margin-bottom:var(--sm);}
 .fstep-top .fn{font-family:var(--serif);font-weight:700;font-size:1.5rem;color:var(--teal);line-height:1;}
 .fstep-top h2{font-weight:700;font-size:1.4rem;letter-spacing:-0.01em;}
-.fstep-lede{max-width:66ch;color:var(--ink-soft);}
+.fstep-lede{color:var(--ink-soft);}
 .fstep-lede p+p{margin-top:var(--sm);}
-.fstep-methods{margin-top:var(--lg);max-width:74ch;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;}
+.fstep-methods{margin-top:var(--lg);background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;}
 .fmethod{display:grid;grid-template-columns:190px 1fr;gap:var(--lg);padding:var(--md) var(--lg);border-top:1px solid var(--line-soft);}
 .fmethod:first-child{border-top:0;}
 .fmethod .fmn{font-weight:600;font-size:0.98rem;}
 .fmethod .fmn .avail{display:block;font-family:var(--mono);font-size:0.72rem;color:var(--teal);font-weight:400;margin-top:4px;}
 .fmethod .fmn .avail.folded{color:var(--muted);}
 .fmethod .fmd{color:var(--ink-soft);font-size:0.95rem;}
-.fstep-note{margin-top:var(--md);font-size:0.92rem;color:var(--muted);max-width:66ch;}
+.fstep-note{margin-top:var(--md);font-size:0.92rem;color:var(--muted);}
 @media(max-width:640px){.fmethod{grid-template-columns:1fr;gap:var(--xs);}}
 
 /* ================= LIBRARY PAGE ================= */
@@ -138,7 +138,7 @@ h2.head{font-family:var(--serif);font-weight:700;font-size:1.6rem;letter-spacing
 .lmethods .lmrow{display:grid;grid-template-columns:1fr auto;gap:2px var(--md);align-items:start;padding:var(--md) 0;border-top:1px solid var(--line-soft);}
 .lmethods .lmrow:first-of-type{border-top:0;}
 .lmrow .lmn{font-weight:600;font-size:0.96rem;}
-.lmrow .lmd{grid-column:1;font-size:0.9rem;color:var(--ink-soft);margin-top:2px;max-width:52ch;}
+.lmrow .lmd{grid-column:1;font-size:0.9rem;color:var(--ink-soft);margin-top:2px;}
 .lmrow .lmlink{grid-column:2;grid-row:1;font-size:0.85rem;font-weight:600;color:var(--teal);white-space:nowrap;cursor:pointer;}
 .lmrow .lmlink:hover{text-decoration:underline;}
 .lmrow .lmfold{grid-column:2;grid-row:1;font-size:0.82rem;color:var(--muted);white-space:nowrap;}
@@ -191,7 +191,7 @@ pre.prompt{margin:0;padding:var(--lg);font-family:var(--mono);font-size:0.9rem;l
 @media(max-width:640px){.tracker a .lbl{display:none;}.tracker a{justify-content:center;}}
 
 /* ============ v5: containment layout for library ============ */
-.lstep-desc{color:var(--ink-soft);font-size:1rem;margin-bottom:var(--lg);max-width:70ch;}
+.lstep-desc{color:var(--ink-soft);font-size:1rem;margin-bottom:var(--lg);}
 .step-primary{margin-bottom:var(--lg);}
 .step-primary-label{font-size:1.02rem;font-weight:700;color:var(--ink);margin-bottom:var(--sm);letter-spacing:-0.005em;}
 .contains{border-top:1px solid var(--line);padding-top:var(--xl);margin-top:var(--lg);}
