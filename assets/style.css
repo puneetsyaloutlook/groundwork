@@ -108,11 +108,11 @@ h2.head{font-family:var(--serif);font-weight:700;font-size:var(--t-h2);letter-sp
 .bedrock{padding:var(--xl) 0;}
 .bedrock .callout{color:var(--teal);}
 .bedrock h2{font-family:var(--serif);font-weight:600;font-size:var(--t-h2);color:var(--ink);margin-bottom:var(--md);}
-.slab{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--lg);margin-top:var(--md);}
+.slab{display:grid;grid-template-columns:1fr 1fr;gap:var(--lg) var(--xl);margin-top:var(--md);}
 .slab .s .k{font-family:var(--mono);font-size:var(--t-eyebrow);color:var(--teal);}
-.slab .s b{display:block;font-size:var(--t-body);margin:var(--xs) 0;color:var(--ink);}
-.slab .s span{font-size:var(--t-fine);color:var(--ink-soft);}
-@media(max-width:820px){.slab{grid-template-columns:1fr 1fr;}}
+.slab .s b{display:block;font-size:var(--t-h3);font-weight:700;margin:0 0 var(--xs);color:var(--ink);}
+.slab .s span{font-size:var(--t-small);color:var(--ink-soft);}
+@media(max-width:820px){.slab{grid-template-columns:1fr;}}
 @media(max-width:520px){.slab{grid-template-columns:1fr;}}
 
 /* ================= FRAMEWORK PAGE (research practice) ================= */
