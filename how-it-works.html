@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Overview: AIGroundwork</title>
-<meta name="description" content="Why an ordinary prompt gives a plausible answer, and how prompts that carry a research method give a sound one.">
+<meta name="description" content="What AIGroundwork is, what is on the site, and where to go depending on what you want to do.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -19,55 +19,40 @@
         <a href="system-prompt.html">System prompt</a>
       </nav>
     </div>
-  </header>  <section class="sec">
-    <span class="tick" style="top:72px">00</span>
+  </header>  <section class="sec" style="border-bottom:0">
     <div class="inner">
-      <div class="page-head" style="border-bottom:0;padding-bottom:0">
+      <div class="pagehead">
         <div class="kicker">Overview</div>
-        <h1>An ordinary prompt does what you ask. These do what a researcher would.</h1>
+        <h1>What this site is, and where to go</h1>
+        <div class="desc">
+          <p>AIGroundwork is a set of research methods written as prompts. The methods are the things a careful researcher does that an AI does not do on its own: framing a question properly, chasing weak leads to sources that hold, analysing rather than summarising, testing a conclusion, and reporting it so others will read it. Written as prompts, an AI carries them out for you.</p>
+          <p>There are three ways in, depending on what you want right now.</p>
+        </div>
       </div>
-      <div class="prose" style="margin-top:var(--sp-xl)">
-        <p>A capable prompt already gets you a plausible answer. Ask an AI to assess a vendor's claim of 40 enterprise customers, and tell it to check each named customer against their own filings, and it will. Good prompting produces good work. The limit is that a prompt only does what you thought to ask for, and the most valuable parts of research are the ones that decide what to look at in the first place. You cannot ask for those, because asking would mean you already had the answer.</p>
-        <p>That is the difference these prompts make. Each one carries a method a careful researcher uses: reframing a question that was put badly, chasing a weak lead to a source that holds, laying two things side by side to see what the comparison reveals, searching for the evidence that would prove a conclusion wrong. An ordinary prompt does none of these unless you spell them out every time. A prompt that carries the method does them because the method is built in.</p>
-        <p><strong>You use the method at whatever scale the work needs.</strong> A single method-prompt runs one move in a chat. The system prompt runs the whole method standing, in a project or an agent, so every research task gets the full process without being asked.</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="sec">
-    <span class="tick" style="top:72px">01</span>
-    <div class="inner">
-      <div class="callout">What a plain prompt cannot reach</div>
-      <div class="prose">
-        <p><strong>You set the topic and handed it over.</strong> So the AI will not stop and tell you the question worth researching is slightly different from the one you asked.</p>
-        <p><strong>You can only name leads you already know about.</strong> So the small detail that quietly changes the answer, the one you did not know was there, gets missed.</p>
-        <p><strong>You would have to have already spotted the useful comparison</strong> for the AI to lay two things side by side and show you what it reveals.</p>
-        <p>The method covers these because it does not wait to be asked. That is what a careful researcher does by habit, written down so the AI follows it.</p>
+      <div class="route">
+        <a class="route-card" href="how-it-works.html">
+          <div class="route-k">Understand the method</div>
+          <h2>How it works</h2>
+          <p>The five research steps explained: what each one is, what a researcher does there, and the methods inside it. Start here if you want to know what the prompts are doing and why, before using them.</p>
+          <span class="route-go">Read how it works</span>
+        </a>
+        <a class="route-card" href="prompt-library.html">
+          <div class="route-k">Run one now</div>
+          <h2>Manual prompts</h2>
+          <p>Prompts you paste into a chat to run a single research move, or a whole step, on the spot. Reach for these when you want to fix one thing in a conversation you are already in: chase a shaky figure, stress-test a conclusion, pull the channel-ready version out of a finished report.</p>
+          <span class="route-go">Go to the prompts</span>
+        </a>
+        <a class="route-card" href="system-prompt.html">
+          <div class="route-k">Run it on everything</div>
+          <h2>System prompt</h2>
+          <p>The whole method as one standing instruction for a project or an agent. Install it once and every research task gets the full process without being asked. Use this when research is ongoing work, not a one-off.</p>
+          <span class="route-go">Get the system prompt</span>
+        </a>
       </div>
-    </div>
-  </section>
 
-  <section class="sec bedrock">
-    <span class="tick" style="top:72px;color:#5CB8B8">02</span>
-    <div class="inner">
-      <div class="callout">Bedrock <span class="ref">/ holds throughout</span></div>
-      <h2>Standards that run under every step</h2>
-      <div class="slab">
-        <div class="s"><span class="k">ST-1</span><b>Rank the sources</b><span>Primary and institutional sources support a fact; weak sources only point to leads.</span></div>
-        <div class="s"><span class="k">ST-2</span><b>Match effort to stakes</b><span>Background gets one source; a load-bearing claim gets the full chase and the contrary search.</span></div>
-        <div class="s"><span class="k">ST-3</span><b>Keep a running record</b><span>Every claim that matters, its status, its best source, what was searched.</span></div>
-        <div class="s"><span class="k">ST-4</span><b>Revisit</b><span>A finding that undoes earlier work sends the task back to the step it affects.</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <span class="tick" style="top:72px">03</span>
-    <div class="inner">
-      <div class="callout">What it does not do <span class="ref">/ honest limits</span></div>
-      <div class="prose">
-        <p><strong>It raises the floor, not to certainty.</strong> The method makes a sound result far more likely. It does not guarantee one. The same prompt will occasionally miss a lead it usually catches, which is why it is worth checking one once whenever you change it.</p>
-        <p><strong>It costs more.</strong> The full method might run ten searches on a task a bare request would answer in two. Matching effort to stakes is what keeps that work aimed at the claims that actually carry the conclusion.</p>
+      <div class="route-note">
+        <p>The manual prompts and the system prompt are the same method at two scales: one move at a time in a chat, or the whole thing running standing. How it works explains the method behind both. For the case for why these beat an ordinary prompt, see the <a href="index.html">home page</a>.</p>
       </div>
     </div>
   </section>
