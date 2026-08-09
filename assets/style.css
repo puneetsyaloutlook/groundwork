@@ -204,3 +204,6 @@ pre.prompt{margin:0;padding:var(--lg);font-family:var(--mono);font-size:0.9rem;l
 .cmrow .cmlink:hover{text-decoration:underline;}
 .cmrow .cmnote{font-size:0.82rem;color:var(--muted);white-space:nowrap;}
 @media(max-width:680px){.cmrow{grid-template-columns:1fr;gap:2px;}.cmrow .cmlink,.cmrow .cmnote{justify-self:start;margin-top:var(--xs);}}
+
+/* library step prompts: fixed-height with internal scroll */
+.step-primary pre.prompt{max-height:320px;overflow-y:auto;}
