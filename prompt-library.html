@@ -33,6 +33,9 @@
     <pre class="prompt">Work through the framing of this research with me before searching.
 
 Use the topic we have been discussing, or ask me for it if there is none yet.
+If a later step sent us back here because the evidence broke the original
+framing, do not start over: say what specifically changed, and reframe only what
+has to change.
 
 1. Restate it as the decision it informs, the questions needed to make that
    decision, and the evidence that would answer them.
@@ -73,6 +76,10 @@ of quietly re-scoping.
 - Do not rest anything important on a single source when a second could be
   found. After three failed searches for a detail, mark it unconfirmed and move
   on.
+- If what you find undoes something the framing assumed, or makes the settled
+  question the wrong one to be asking, stop and say so. Recommend going back to
+  the framing step rather than researching on against a brief the evidence has
+  already broken.
 
 Show me the table as you build it, and tell me what you could not confirm.
 
@@ -81,7 +88,7 @@ End with a short process note:
   PROCESS NOTE
   Inherited: [the decision and load-bearing split you worked from]
   Did with it: [verified which load-bearing claims; what you left as background]
-  Drift: [none, or state what you changed about the framing and why]
+  Drift: [none, or what changed; if it breaks the framing, say to go back to framing]
   Handing on: [the confirmed claims and the still-open ones the next step needs]</pre>
   </div></div><div class="contains"><div class="contains-label">Sub-prompts for each research method within this step</div><div class="cmrow"><div class="cmn">Spot the lead</div><div class="cmd">Some details are always worth a follow-up, even in a poor source: a named person moving between organisations, a filing mentioned but not linked, a number that clashes with one you already have, and things that should be present and are missing. Missing things matter most and are the easiest to overlook.</div><div class="cmlink" data-open="spot-the-lead">Run alone</div></div><div class="cmrow"><div class="cmn">Chase the detail</div><div class="cmd">Pull the checkable specifics out of a weak source, the names, dates, figures and references, and follow them to a source that can back them up. A weak source is never evidence; it is a supply of things to check.</div><div class="cmlink" data-open="chase-the-detail">Run alone</div></div><div class="cmrow"><div class="cmn">Resolve and record claims</div><div class="cmd">Every detail you chase ends in one of three states, written down: confirmed, contradicted, or unconfirmed and flagged. Those three endings prevent the two quiet failures, a weak claim slipping through as fact, and a real lead getting dropped because its first source was poor.</div><div class="cmlink" data-open="resolve-and-record-claims">Run alone</div></div><div class="cmrow"><div class="cmn">Know when to stop</div><div class="cmd">Set a floor and a ceiling. Nothing the conclusion depends on should rest on a single source when a second could be found. Once three searches for a detail have failed, mark it unconfirmed and move on.</div><div class="cmnote">no separate prompt</div></div></div></div><div class="lstep inner" id="analyse" style="max-width:none"><div class="lstep-top"><span class="ln">03</span><h2>Analyse</h2></div><p class="lstep-desc">Produce findings that are not sitting in any single source.</p><div class="step-primary"><div class="step-primary-label">Prompt to run this complete step</div><div class="prompt-wrap">
     <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
@@ -99,7 +106,9 @@ is missing, ask rather than filling the gap with unverified material.
 - Where the two are peers, tell me where they differ: what each treats as
   central, where one is specific and the other vague.
 - If a comparison does not hold together, say so and suggest a better one rather
-  than forcing it.
+  than forcing it. If the comparisons keep failing to hold, treat that as a sign
+  the question was framed wrongly and recommend returning to the framing step,
+  rather than forcing findings out of material that will not support them.
 
 For each finding, tell me what in the material supports it.
 
@@ -108,7 +117,7 @@ End with a short process note:
   PROCESS NOTE
   Inherited: [the question and the confirmed material you worked from]
   Did with it: [what you compared, what shape you read]
-  Drift: [none, or what you changed and why]
+  Drift: [none, or what changed; if comparisons will not hold, say to go back to framing]
   Handing on: [the findings the conclusion should be built from]</pre>
   </div></div><div class="contains"><div class="contains-label">Sub-prompts for each research method within this step</div><div class="cmrow"><div class="cmn">Put two patterns side by side</div><div class="cmd">Lay one thing against another in a table, then read the shape of the result, not the cells. Obligations spread across every stage though they came from one statement point to a coordination problem; obligations bunched into an easy group and a hard group point to a feasibility problem. Name the shape you want, spread, clustering, concentration, gaps, or the AI just reports each cell.</div><div class="cmlink" data-open="put-two-patterns-side-by-side">Run alone</div></div><div class="cmrow"><div class="cmn">Read the differences</div><div class="cmd">When the two things are peers, the finding is where they differ: where one is specific and the other vague, how they divide the subject up, what each treats as central.</div><div class="cmnote">no separate prompt</div></div><div class="cmrow"><div class="cmn">Check the fit</div><div class="cmd">Sometimes most of one thing will not line up against the other. Then the finding is that the two do not belong together. Say so and suggest a better pairing rather than forcing the comparison.</div><div class="cmnote">no separate prompt</div></div></div></div><div class="lstep inner" id="conclude" style="max-width:none"><div class="lstep-top"><span class="ln">04</span><h2>Conclude</h2></div><p class="lstep-desc">Test the finding and put it in a form you can trust.</p><div class="step-primary"><div class="step-primary-label">Prompt to run this complete step</div><div class="prompt-wrap">
     <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
@@ -129,6 +138,10 @@ so rather than answering a different question.
    confirmed.
 4. Check the result: every fact traceable to a good source, anything unconfirmed
    marked as such, the contrary case addressed.
+5. If a claim the conclusion needs fails its check, or the contrary evidence
+   shifts a claim others were built on, do not conclude over it. Say which
+   earlier step has to be reopened (the gathering of that claim, or the framing
+   if the whole question is affected) and stop there.
 
 Show me the conclusion and the claims it depends on.
 
@@ -137,7 +150,7 @@ End with a short process note:
   PROCESS NOTE
   Inherited: [the decision, question, and confirmed claims you built from]
   Did with it: [how the conclusion follows from them]
-  Drift: [none, or where the finished answer departs from the original framing]
+  Drift: [none, or where it departs; if a claim failed, say which step to reopen]
   Rests on: [the specific confirmed claims the conclusion depends on]</pre>
   </div></div><div class="contains"><div class="contains-label">Sub-prompts for each research method within this step</div><div class="cmrow"><div class="cmn">Look for evidence against the conclusion</div><div class="cmd">Search for evidence the conclusion is wrong, not more that it is right. Word the search to find the opposite, then deal with the strongest objection you find even when it does not change the answer. &quot;Consider other views&quot; produces a hedge; searching for the opposite produces new information.</div><div class="cmlink" data-open="look-for-evidence-against-the-conclusion">Run alone</div></div><div class="cmrow"><div class="cmn">Build the finding</div><div class="cmd">State what the checked material actually supports, which is not always the direction most of the material seems to point.</div><div class="cmnote">no separate prompt</div></div><div class="cmrow"><div class="cmn">Show what it rests on</div><div class="cmd">The conclusion names the specific claims it depends on, and each of those has been confirmed.</div><div class="cmnote">no separate prompt</div></div><div class="cmrow"><div class="cmn">Test the draft</div><div class="cmd">Check the finished piece against the standards: every fact traced to a good source, anything unconfirmed marked rather than asserted or dropped, the contrary case addressed. It catches problems even on work written without the method, though it cannot do the checking that never happened.</div><div class="cmlink" data-open="test-the-draft">Run alone</div></div></div></div></div></section><div class="modal-bg" id="modal-bg"><div class="modal" data-modal="restate-the-question" style="display:none"><div class="modal-top"><div><div class="mk">Run just this method / Frame</div><h3>Restate the question</h3></div><button class="modal-close" aria-label="Close">&times;</button></div><div class="modal-body"><div class="modal-facets"><div><div class="fk">What it does</div><div class="fv">Turns a loose topic into a question you can actually research.</div></div><div><div class="fk">What it replicates</div><div class="fv">A researcher rarely takes a topic at face value. They work out what decision it serves and what a useful answer would look like, and often find the real question sits just to one side of the one they were handed.</div></div><div><div class="fk">When to use it</div><div class="fv">At the start of a piece of work, or partway through when you realise the question was never properly pinned down.</div></div></div><div class="prompt-wrap">
     <div class="prompt-bar"><span>Prompt</span><button class="copy-btn" data-label="Copy">Copy</button></div>
